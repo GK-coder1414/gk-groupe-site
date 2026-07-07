@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GK GROUPE inc — Livraison · Déménagement · Auto · Jardinage</title>
+<meta name="description" content="GK Groupe inc — Livraison, déménagement, service auto et détaillage au Québec. Soumission gratuite, réponse sous 24h.">
+<link rel="icon" href="logo-white.png">
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Open Graph / partage sur réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:site_name" content="GK Groupe inc">
+<meta property="og:title" content="GK Groupe inc — Livraison · Déménagement · Auto · Détaillage">
+<meta property="og:description" content="Livraison, déménagement, service auto et détaillage au Québec. Soumission gratuite, réponse sous 24h. Disponible 7j/7.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GK Groupe inc — Livraison · Déménagement · Auto · Détaillage">
+<meta name="twitter:description" content="Livraison, déménagement, service auto et détaillage au Québec. Soumission gratuite, réponse sous 24h.">
+<meta name="twitter:image" content="og-image.png">
+
+<!-- Données structurées Google (entreprise locale) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GK Groupe inc",
+  "image": "logo.png",
+  "telephone": "+1-581-447-0086",
+  "email": "gestion@gkgroupeinc.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": "Saguenay et environs",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quels services offrez-vous ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Livraison locale et express, déménagement résidentiel et commercial, service mécanique auto et détaillage intérieur/extérieur. Jardinage et déneigement arrivent bientôt." }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien coûte une soumission ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La soumission est 100% gratuite et sans engagement. Réponse avec un prix clair sous 24h." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est votre zone desservie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le Grand Montréal, Laval et les environs. Pour une destination plus éloignée, contactez GK Groupe directement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont vos forfaits de détaillage ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trois forfaits : Base à 120$ plus taxes, Standard à 220$ plus taxes, et Premium à 320$ plus taxes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont vos horaires ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "GK Groupe est disponible 7 jours sur 7." }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader"><img src="logo-white.png" alt="GK Groupe inc"></div>
+
+<header>
+  <img src="logo.png" alt="GK Groupe inc" class="logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#packs">Forfaits</a>
+    <a href="#portfolio">Réalisations</a>
+    <a href="#process">Démarche</a>
+    <a href="#faq">FAQ</a>
+    <a href="#carrieres">Carrières</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button onclick="openModal('soumission')" class="call-btn"><span class="dot"></span>Soumission gratuite</button>
+  <button class="burger" onclick="toggleMobileNav()" aria-label="Ouvrir le menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+</header>
+
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-top">
+      <img src="logo.png" alt="GK Groupe inc">
+      <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Fermer le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#services" onclick="toggleMobileNav()">Services</a>
+      <a href="#packs" onclick="toggleMobileNav()">Forfaits</a>
+      <a href="#portfolio" onclick="toggleMobileNav()">Réalisations</a>
+      <a href="#process" onclick="toggleMobileNav()">Démarche</a>
+      <a href="#faq" onclick="toggleMobileNav()">FAQ</a>
+      <a href="#carrieres" onclick="toggleMobileNav()">Carrières</a>
+      <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+    </nav>
+    <button onclick="toggleMobileNav();openModal('soumission')" class="call-btn"><span class="dot"></span>Soumission gratuite</button>
+    <a href="tel:+15814470086" class="btn-ghost"> 581-447-0086</a>
+  </div>
+</div>
+
+<div class="mobile-cta-bar">
+  <a href="tel:+15814470086" class="mcb-btn mcb-call"> Appeler</a>
+  <button onclick="openModal('soumission')" class="mcb-btn mcb-quote"> Soumission gratuite</button>
+</div>
+
+<section class="hero">
+  <div class="route-track">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="none">
+      <path class="route-line" d="M -50 600 C 250 500, 350 650, 600 500 S 950 250, 1300 350"/>
+      <path class="route-line" style="animation-delay:-8s" d="M -50 200 C 300 300, 500 100, 800 220 S 1100 450, 1300 380"/>
+    </svg>
+  </div>
+
+  <div class="hero-top">
+    <div>
+      <span class="eyebrow">GK Groupe inc · Basé au Québec</span>
+      <h1>On déplace,<br>on transforme,<br><span class="accent">on prend soin.</span></h1>
+      <p class="lede">Livraison, déménagement, service auto et détaillage — une seule équipe, un seul numéro à appeler. Jardinage et déneigement arrivent bientôt.</p>
+      <div class="hero-cta">
+        <button onclick="openModal('soumission')" class="btn-primary"> Demander une soumission</button>
+        <a href="https://app.squareup.com/appointments/book/vewm7vlocnf8td/LKE050Q96VTRC/start" target="_blank" class="btn-primary btn-primary-outline"> Réserver en ligne</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-blob"></div>
+      <div class="hv-card hv-card-1">
+        <div class="hv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11"/><path d="M15 9h4l3 3v5h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="17.5" cy="19" r="2"/></svg></div>
+        <div><strong>Déménagement</strong><span>en cours — Saguenay</span></div>
+      </div>
+      <div class="hv-card hv-card-2">
+        <div class="hv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></div>
+        <div><strong>Livraison express</strong><span>Arrivée estimée 17h</span></div>
+      </div>
+      <div class="hv-card hv-card-3">
+        <span class="hv-num">7j/7</span>
+        <span class="hv-lbl">Disponibilité</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Livraison locale</span><span>·</span><span>Déménagement résidentiel &amp; commercial</span><span>·</span><span>Service auto</span><span>·</span><span>Détaillage intérieur / extérieur</span><span>·</span><span>Jardinage — bientôt</span><span>·</span><span>Déneigement — bientôt</span><span>·</span>
+      <span>Livraison locale</span><span>·</span><span>Déménagement résidentiel &amp; commercial</span><span>·</span><span>Service auto</span><span>·</span><span>Détaillage intérieur / extérieur</span><span>·</span><span>Jardinage — bientôt</span><span>·</span><span>Déneigement — bientôt</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="section-head" data-reveal>
+    <span class="tag">Nos services</span>
+    <h2>Tout ce qu'il faut pour bouger, rouler et briller.</h2>
+    <p>Quatre services actifs aujourd'hui, deux de plus en préparation pour l'an prochain.</p>
+  </div>
+  <div class="service-grid" data-reveal>
+    <div class="ticket">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></div>
+      <span class="ticket-id">SERVICE / 01</span>
+      <h3>Livraison</h3>
+      <p>Colis, palettes et envois express livrés dans les délais, partout dans la région.</p>
+      <span class="badge">Disponible</span>
+    </div>
+    <div class="ticket">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11"/><path d="M15 9h4l3 3v5h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="17.5" cy="19" r="2"/></svg></div>
+      <span class="ticket-id">SERVICE / 02</span>
+      <h3>Déménagement</h3>
+      <p>Résidentiel ou commercial — équipe soignée, matériel adapté, zéro casse.</p>
+      <span class="badge">Disponible</span>
+    </div>
+    <div class="ticket">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <span class="ticket-id">SERVICE / 03</span>
+      <h3>Service auto</h3>
+      <p>Entretien, réparations et inspections par des mains expérimentées.</p>
+      <span class="badge">Disponible</span>
+    </div>
+    <div class="ticket">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></div>
+      <span class="ticket-id">SERVICE / 04</span>
+      <h3>Détaillage auto</h3>
+      <p>Intérieur et extérieur — votre véhicule comme neuf, à chaque visite.</p>
+      <span class="badge">Disponible</span>
+    </div>
+    <div class="ticket soon">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-11 15-11 0 8-3 15-11 15-1.5 0-3-.3-4.2-1"/><path d="M4 20L12 12"/></svg></div>
+      <span class="ticket-id">SERVICE / 05</span>
+      <h3>Jardinage</h3>
+      <p>Entretien de terrain, tonte et aménagement paysager.</p>
+      <span class="badge">Bientôt</span>
+    </div>
+    <div class="ticket soon">
+      <div class="ticket-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1l14.2-14.2"/></svg></div>
+      <span class="ticket-id">SERVICE / 06</span>
+      <h3>Déneigement</h3>
+      <p>Déblaiement résidentiel et commercial pour l'hiver à venir.</p>
+      <span class="badge">Bientôt</span>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div data-reveal>
+    <span class="tag">Pourquoi GK Groupe</span>
+    <h2 style="font-size:clamp(28px,3.6vw,42px);font-weight:700;margin-bottom:30px;max-width:480px;">Une équipe, plusieurs métiers, un seul standard.</h2>
+    <div class="why-list">
+      <div class="why-item">
+        <span class="num">01</span>
+        <div><h4>Ponctualité</h4><p>On respecte l'heure convenue, à chaque livraison et chaque rendez-vous.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="num">02</span>
+        <div><h4>Travail soigné</h4><p>Vos biens et votre véhicule sont traités comme les nôtres.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="num">03</span>
+        <div><h4>Prix transparents</h4><p>Soumission claire avant de commencer, sans surprise à la facture.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="stat-card" data-reveal>
+    <div class="row"><span class="val">4</span><span class="lbl">services actifs, 2 à venir</span></div>
+    <div class="row"><span class="val">100%</span><span class="lbl">satisfaction visée à chaque mandat</span></div>
+    <div class="row"><span class="val">7j/7</span><span class="lbl">disponibilité pour vos urgences</span></div>
+  </div>
+</section>
+
+<div class="partners">
+  <p class="partners-label">Partenaires de confiance</p>
+  <div class="logo-track-wrap">
+    <div class="logo-track">
+      <div class="partner-logo"><img src="nationex-logo.png" alt="Nationex"></div>
+      <div class="partner-logo"><img src="intelcom.png" alt="Intelcom"></div>
+      <div class="partner-logo"><img src="GLS.png" alt="GLS"></div>
+      <div class="partner-logo"><img src="logo ford.png" alt="Ford"></div>
+      <div class="partner-logo"><img src="Enterprise-Rent-A-Car-Logo.png" alt="Enterprise Rent-A-Car"></div>
+      <!-- duplicate for seamless loop -->
+      <div class="partner-logo"><img src="nationex-logo.png" alt="Nationex"></div>
+      <div class="partner-logo"><img src="intelcom.png" alt="Intelcom"></div>
+      <div class="partner-logo"><img src="GLS.png" alt="GLS"></div>
+      <div class="partner-logo"><img src="logo ford.png" alt="Ford"></div>
+      <div class="partner-logo"><img src="Enterprise-Rent-A-Car-Logo.png" alt="Enterprise Rent-A-Car"></div>
+    </div>
+  </div>
+</div>
+
+<section id="portfolio" class="portfolio">
+  <div class="section-head" data-reveal>
+    <span class="tag">Portfolio</span>
+    <h2>Des mandats récents, en bref.</h2>
+    <p>Un aperçu de nos interventions. Remplacez ces cartes par vos propres photos avant — après quand elles seront prêtes.</p>
+  </div>
+  <div class="filters" data-reveal>
+    <button class="filter-btn active">Tout</button>
+    <button class="filter-btn">Livraison</button>
+    <button class="filter-btn">Déménagement</button>
+    <button class="filter-btn">Auto</button>
+  </div>
+  <div class="work-grid" data-reveal>
+
+    <div class="work-card">
+      <div class="work-visual delivery-bg">
+        <div class="visual-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></div>
+        <div class="visual-label">Livraison</div>
+      </div>
+      <div class="work-info">
+        <span class="cat">Livraison</span>
+        <h4>Livraison locale &amp; express</h4>
+        <p>Colis, envois urgents et commandes livrés partout dans la région, dans les délais promis — résidentiel et commercial.</p>
+        <ul class="work-tags"><li>Résidentiel</li><li>Commercial</li><li>Express</li><li>Nationex</li><li>Intelcom</li></ul>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="work-visual moving-bg">
+        <div class="visual-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11"/><path d="M15 9h4l3 3v5h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="17.5" cy="19" r="2"/></svg></div>
+        <div class="visual-label">Déménagement</div>
+      </div>
+      <div class="work-info">
+        <span class="cat">Déménagement</span>
+        <h4>Déménagement résidentiel &amp; commercial</h4>
+        <p>Appartements, maisons, bureaux — équipe soignée, matériel de protection, zéro casse. Local ou longue distance.</p>
+        <ul class="work-tags"><li>Local</li><li>Longue distance</li><li>Emballage</li><li>Bureau</li></ul>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="work-visual mec-bg">
+        <div class="visual-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="visual-label">Service mécanique</div>
+      </div>
+      <div class="work-info">
+        <span class="cat">Service mécanique</span>
+        <h4>Entretien &amp; réparations auto</h4>
+        <p>Vidange, freins, inspection pré-achat, diagnostics — un service rapide, honnête et transparent pour votre véhicule.</p>
+        <ul class="work-tags"><li>Inspection</li><li>Réparation</li><li>Diagnostic</li><li>Entretien</li></ul>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="work-visual detail-bg">
+        <div class="visual-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></div>
+        <div class="visual-label">Détaillage</div>
+      </div>
+      <div class="work-info">
+        <span class="cat">Détaillage auto</span>
+        <h4>Détaillage intérieur &amp; extérieur</h4>
+        <p>Lavage complet, polissage carrosserie, traitement cuir, désinfection intérieur — votre voiture ressort comme neuve.</p>
+        <ul class="work-tags"><li>Intérieur</li><li>Extérieur</li><li>Polissage</li><li>Protection</li></ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="packs" class="packs">
+  <div class="section-head" data-reveal>
+    <span class="tag">Forfaits</span>
+    <h2>Trois forfaits détaillage &amp; entretien, prix clair dès le départ.</h2>
+    <p>Choisissez le niveau de soin qu'il faut à votre véhicule. Prix avant taxes — aucune surprise à la facture.</p>
+  </div>
+  <div class="pack-grid" data-reveal>
+
+    <div class="pack-card">
+      <span class="pack-name">Base</span>
+      <div class="pack-price">120$<sup>+ tx</sup></div>
+      <p class="pack-tax">Idéal pour un entretien régulier</p>
+      <ul class="pack-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Lavage carrosserie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rinçage &amp; séchage</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Aspirateur complet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Vidange d'huile moteur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : nettoyage des jantes</li>
+      </ul>
+      <button class="pack-btn" onclick="openPackModal('Pack Base','120$')">Réserver ce forfait →</button>
+    </div>
+
+    <div class="pack-card featured">
+      <span class="pack-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.2l7.1-.6z"/></svg>Le plus populaire</span>
+      <span class="pack-name">Standard</span>
+      <div class="pack-price">220$<sup>+ tx</sup></div>
+      <p class="pack-tax">Le bon équilibre entretien / protection</p>
+      <ul class="pack-list">
+        <li class="plus-label">Tout le forfait Base, plus :</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Protection cire</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rénovation plastique</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Brillance pneus</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Changement de frein <em>ou</em> de pneu (sur jante)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : parfum habitacle</li>
+      </ul>
+      <button class="pack-btn" onclick="openPackModal('Pack Standard','220$')">Réserver ce forfait →</button>
+    </div>
+
+    <div class="pack-card">
+      <span class="pack-name">Premium</span>
+      <div class="pack-price">320$<sup>+ tx</sup></div>
+      <p class="pack-tax">Le soin complet, intérieur comme extérieur</p>
+      <ul class="pack-list">
+        <li class="plus-label">Tout le forfait Standard, plus :</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Finition détaillage &amp; nettoyage des jantes en profondeur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Aspirateur ultra complet + shampouineuse sièges &amp; moquettes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nettoyage à vapeur &amp; traitement cuir</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Frein <b>et</b> pneu inclus (avec ou sans jante)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : nettoyage du compartiment moteur</li>
+      </ul>
+      <button class="pack-btn" onclick="openPackModal('Pack Premium','320$')">Réserver ce forfait →</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="process">
+  <div class="section-head" data-reveal>
+    <span class="tag">Comment ça fonctionne</span>
+    <h2>De l'appel à la facture, en quatre étapes.</h2>
+  </div>
+  <div class="process-row" data-reveal>
+    <div class="proc"><span class="pn">01</span><h4>Vous appelez</h4><p>Décrivez votre besoin, on vous répond rapidement.</p></div>
+    <div class="proc"><span class="pn">02</span><h4>Soumission</h4><p>Prix clair, sans engagement de votre part.</p></div>
+    <div class="proc"><span class="pn">03</span><h4>Exécution</h4><p>Notre équipe réalise le mandat avec soin.</p></div>
+    <div class="proc"><span class="pn">04</span><h4>Suivi</h4><p>On confirme que tout est conforme à vos attentes.</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="section-head" data-reveal>
+    <span class="tag">Questions fréquentes</span>
+    <h2>Tout ce qu'il faut savoir avant de nous contacter.</h2>
+  </div>
+  <div class="faq-list" data-reveal>
+    <details class="faq-item">
+      <summary>Quels services offrez-vous ?<span class="faq-plus">+</span></summary>
+      <p>Livraison locale &amp; express, déménagement résidentiel &amp; commercial, service mécanique auto et détaillage intérieur/extérieur. Jardinage et déneigement arrivent bientôt.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Combien coûte une soumission ?<span class="faq-plus">+</span></summary>
+      <p>La soumission est 100% gratuite et sans engagement. Remplissez notre formulaire ou appelez-nous, on vous répond avec un prix clair sous 24h.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quelle est votre zone desservie ?<span class="faq-plus">+</span></summary>
+      <p>On dessert principalement le Saguenay et les environs. Pour une destination plus éloignée, contactez-nous — on regarde au cas par cas.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quels sont vos forfaits de service auto ?<span class="faq-plus">+</span></summary>
+      <p>Trois forfaits : Base (120$ + tx), Standard (220$ + tx, le plus populaire) et Premium (320$ + tx). Détails complets dans la section <a href="#packs">Forfaits</a>.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quels sont vos horaires ?<span class="faq-plus">+</span></summary>
+      <p>On est disponibles 7 jours sur 7. Pour une urgence en dehors des heures normales, écrivez-nous directement sur WhatsApp.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Comment réserver ou obtenir une soumission ?<span class="faq-plus">+</span></summary>
+      <p>Trois façons : remplissez notre formulaire de soumission, réservez un rendez-vous en ligne, ou appelez-nous directement au 581-447-0086.</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta-block" data-reveal>
+    <div>
+      <h2>Prêt à confier votre prochain mandat à GK Groupe ?</h2>
+      <p style="opacity:.8;margin-top:12px;font-size:15px;">Remplissez le formulaire ou réservez directement en ligne.</p>
+    </div>
+    <div class="contact-btns">
+      <button onclick="openModal('soumission')" class="btn-white"> Demander une soumission</button>
+      <a href="https://app.squareup.com/appointments/book/vewm7vlocnf8td/LKE050Q96VTRC/start" target="_blank" class="btn-white"> Réserver en ligne</a>
+      <a href="tel:+15814470086" class="btn-white-outline"> 581-447-0086</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CARRIÈRES ========== -->
+<section id="carrieres" style="background:var(--paper);">
+  <div class="section-head" data-reveal>
+    <span class="tag">Carrières</span>
+    <h2>Rejoins l'équipe GK Groupe.</h2>
+    <p>On est en croissance et on cherche des personnes fiables, motivées et prêtes à travailler. Envoie-nous ta candidature directement ici.</p>
+  </div>
+  <div class="career-grid" data-reveal>
+    <div class="job-card">
+      <div class="job-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></div>
+      <h4>Livreur / Coursier</h4>
+      <p>Permis de conduire valide, disponibilité flexible, bon sens de l'orientation.</p>
+      <button onclick="openModal('carriere','Livreur / Coursier')" class="job-btn">Postuler →</button>
+    </div>
+    <div class="job-card">
+      <div class="job-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11"/><path d="M15 9h4l3 3v5h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="17.5" cy="19" r="2"/></svg></div>
+      <h4>Préposé au déménagement</h4>
+      <p>Bonne forme physique, esprit d'équipe, soin apporté aux biens des clients.</p>
+      <button onclick="openModal('carriere','Préposé au déménagement')" class="job-btn">Postuler →</button>
+    </div>
+    <div class="job-card">
+      <div class="job-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <h4>Mécanicien auto</h4>
+      <p>Expérience en mécanique générale, diagnostic et entretien de véhicules.</p>
+      <button onclick="openModal('carriere','Mécanicien auto')" class="job-btn">Postuler →</button>
+    </div>
+    <div class="job-card">
+      <div class="job-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></div>
+      <h4>Technicien en détaillage</h4>
+      <p>Minutie, rigueur et passion pour les beaux véhicules bien entretenus.</p>
+      <button onclick="openModal('carriere','Technicien en détaillage')" class="job-btn">Postuler →</button>
+    </div>
+    <div class="job-card open-app">
+      <div class="job-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+      <h4>Candidature spontanée</h4>
+      <p>Tu n'as pas trouvé ton poste ? Envoie-nous ta candidature quand même.</p>
+      <button onclick="openModal('carriere','Candidature spontanée')" class="job-btn">Postuler →</button>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div>
+    <img src="logo.png" alt="GK Groupe inc" class="logo">
+    <p>Livraison, déménagement, service auto et détaillage. Jardinage et déneigement à venir.</p>
+  </div>
+  <div class="foot-cols">
+    <div>
+      <h5>Services</h5>
+      <a href="#services">Livraison</a>
+      <a href="#services">Déménagement</a>
+      <a href="#services">Service auto</a>
+      <a href="#services">Détaillage</a>
+      <a href="#packs">Forfaits</a>
+    </div>
+    <div>
+      <h5>Compagnie</h5>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">Démarche</a>
+      <a href="#faq">FAQ</a>
+      <a href="#carrieres">Carrières</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h5>Coordonnées</h5>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>581-447-0086</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>gestion@gkgroupeinc.com</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Québec, Canada</span>
+    </div>
+  </div>
+  <div class="foot-bottom">© 2026 GK Groupe inc. Tous droits réservés.</div>
+</footer>
+
+<!-- ========== CHATBOT ========== -->
+<button id="chatbot-btn" onclick="toggleChat()" title="Clavarder avec nous">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M20.4 4H3.6C2.7 4 2 4.7 2 5.6v10.8C2 17.3 2.7 18 3.6 18H8l4 4 4-4h4.4c.9 0 1.6-.7 1.6-1.6V5.6C22 4.7 21.3 4 20.4 4z"/></svg>
+</button>
+
+<div id="chatbot-bubble">
+  <div class="chat-head">
+    <div class="av">🤖</div>
+    <div class="info">
+      <div class="name">GK Groupe inc</div>
+      <div class="status">En ligne maintenant</div>
+    </div>
+    <button onclick="toggleChat()" style="margin-left:auto;background:none;border:none;color:rgba(255,255,255,.65);font-size:20px;cursor:pointer;">✕</button>
+  </div>
+  <div class="chat-body" id="chat-body"></div>
+  <div class="chat-choices" id="chat-choices"></div>
+</div>
+
+<!-- ══ MODAL SOUMISSION ══ -->
+<div class="modal-overlay" id="modal-soumission">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('soumission')">✕</button>
+    <h3> Demande de soumission</h3>
+    <p class="msub">Remplissez le formulaire — nous vous répondons dans les 24h.</p>
+    <form id="form-soumission" action="https://formsubmit.co/gestion@gkgroupeinc.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="Nouvelle demande de soumission — GK Groupe inc">
+      <input type="hidden" name="_replyto" id="s-reply">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="frow">
+        <div class="fg"><label>Prénom *</label><input name="prenom" required placeholder="Jean"></div>
+        <div class="fg"><label>Nom *</label><input name="nom" required placeholder="Tremblay"></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Téléphone *</label><input name="telephone" type="tel" required placeholder="514 000-0000"></div>
+        <div class="fg"><label>Courriel *</label><input name="courriel" type="email" required placeholder="vous@exemple.com" oninput="document.getElementById('s-reply').value=this.value"></div>
+      </div>
+      <div class="fg">
+        <label>Service demandé *</label>
+        <select name="service" required>
+          <option value="">— Choisir un service —</option>
+          <option>📦 Livraison</option>
+          <option>🚚 Déménagement</option>
+          <option>🔧 Service mécanique</option>
+          <option>✨ Détaillage auto</option>
+          <option>🌱 Jardinage (bientôt)</option>
+          <option>❄️ Déneigement (bientôt)</option>
+        </select>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Date souhaitée</label><input name="date" type="date"></div>
+        <div class="fg"><label>Ville / Secteur</label><input name="ville" placeholder="Chicoutimi, Jonquiere..."></div>
+      </div>
+      <div class="fg"><label>Détails / Description</label><textarea name="message" placeholder="Décrivez votre besoin, adresses, quantité, contraintes..."></textarea></div>
+      <button type="submit" class="form-submit">Envoyer la demande →</button>
+      <p class="form-note">Envoi sécurisé vers gestion@gkgroupeinc.com</p>
+      <div class="form-sent" id="s-sent">✅ Demande envoyée ! Nous vous contactons sous 24h.</div>
+      <div class="form-error" id="s-error">⚠️ Erreur d'envoi. Appelez-nous directement au <a href="tel:+15814470086">581-447-0086</a>.</div>
+    </form>
+  </div>
+</div>
+
+<!-- ══ MODAL CARRIÈRE ══ -->
+<div class="modal-overlay" id="modal-carriere">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('carriere')">✕</button>
+    <h3>💼 Postuler chez GK Groupe</h3>
+    <p class="msub" id="carriere-sub">Remplissez le formulaire et joignez votre CV — on vous revient rapidement.</p>
+    <form id="form-carriere" action="https://formsubmit.co/gestion@gkgroupeinc.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="Nouvelle candidature — GK Groupe">
+      <input type="hidden" name="poste" id="c-poste-hidden">
+      <input type="hidden" name="_replyto" id="c-reply">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="frow">
+        <div class="fg"><label>Prénom *</label><input name="prenom" required placeholder="Marie"></div>
+        <div class="fg"><label>Nom *</label><input name="nom" required placeholder="Gagnon"></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Téléphone *</label><input name="telephone" type="tel" required placeholder="438 000-0000"></div>
+        <div class="fg"><label>Courriel *</label><input name="courriel" type="email" required placeholder="vous@exemple.com" oninput="document.getElementById('c-reply').value=this.value"></div>
+      </div>
+      <div class="fg"><label>Poste visé</label><input name="poste_affiche" id="c-poste-affiche" placeholder="Ex: Livreur, Mécanicien..."></div>
+      <div class="fg">
+        <label>Disponibilités</label>
+        <select name="disponibilites">
+          <option>Temps plein</option>
+          <option>Temps partiel</option>
+          <option>Soirs et fins de semaine</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+      <div class="fg"><label>Message / Expérience</label><textarea name="message" placeholder="Parlez-nous de vous, vos expériences passées..."></textarea></div>
+      <div class="fg fg-file">
+        <label for="cv-file">📄 <span>Joindre votre CV (PDF, Word)</span></label>
+        <input type="file" id="cv-file" name="cv" accept=".pdf,.doc,.docx" onchange="document.getElementById('cv-name').textContent = this.files[0]?.name || ''">
+        <span class="file-name" id="cv-name"></span>
+      </div>
+      <button type="submit" class="form-submit">Envoyer ma candidature →</button>
+      <p class="form-note">Envoi sécurisé vers gestion@gkgroupeinc.com</p>
+      <div class="form-sent" id="c-sent">✅ Candidature envoyée ! On vous revient bientôt. Bonne chance 🤞</div>
+      <div class="form-error" id="c-error">⚠️ Erreur d'envoi. Appelez-nous directement au <a href="tel:+15814470086">581-447-0086</a>.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ── PRELOADER ── */
+window.addEventListener('load', function(){
+  setTimeout(function(){ document.getElementById('preloader').classList.add('hide'); }, 900);
+});
+
+/* ── REVEAL ON SCROLL ── */
+(function(){
+  var els = document.querySelectorAll('[data-reveal]');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, {threshold:0.12});
+  els.forEach(function(el){ obs.observe(el); });
+})();
+
+/* ── PORTFOLIO FILTERS ── */
+(function(){
+  var btns = document.querySelectorAll('.filter-btn');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+    });
+  });
+})();
+
+/* ── MOBILE NAV ── */
+function toggleMobileNav(){
+  var overlay = document.getElementById('mobileNavOverlay');
+  var open = overlay.classList.toggle('open');
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+/* ══════════════════════════════════════════════
+   MODALS
+══════════════════════════════════════════════ */
+function openModal(id, poste){
+  var overlay = document.getElementById('modal-' + id);
+  if(!overlay) return;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if(id === 'carriere' && poste){
+    var sub = document.getElementById('carriere-sub');
+    var posteFld = document.getElementById('c-poste-affiche');
+    var hidden = document.getElementById('c-poste-hidden');
+    if(sub) sub.textContent = 'Poste : ' + poste;
+    if(posteFld) posteFld.value = poste;
+    if(hidden) hidden.value = poste;
+  }
+}
+function closeModal(id){
+  var overlay = document.getElementById('modal-' + id);
+  if(overlay) overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function openPackModal(nom, prix){
+  openModal('soumission');
+  var select = document.querySelector('#form-soumission select[name="service"]');
+  if(select) select.value = '✨ Détaillage auto';
+  var msg = document.querySelector('#form-soumission textarea[name="message"]');
+  if(msg) msg.value = 'Forfait demandé : ' + nom + ' (' + prix + ' + tx)';
+}
+document.addEventListener('click', function(e){
+  if(e.target.classList.contains('modal-overlay')) closeModal(e.target.id.replace('modal-',''));
+  if(e.target.id === 'mobileNavOverlay') toggleMobileNav();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    closeModal('soumission'); closeModal('carriere');
+    document.getElementById('mobileNavOverlay').classList.remove('open');
+  }
+});
+
+/* ── SOUMISSION FORM (envoi direct via FormSubmit) ── */
+document.getElementById('form-soumission').addEventListener('submit', function(e){
+  e.preventDefault();
+  var form = this;
+  var btn = form.querySelector('.form-submit');
+  var data = new FormData(form);
+  document.getElementById('s-error').style.display = 'none';
+  btn.disabled = true; btn.textContent = 'Envoi en cours…';
+  fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+    method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+  }).then(function(res){ if(!res.ok) throw new Error('bad response'); return res.json(); })
+  .then(function(){
+    document.getElementById('s-sent').style.display = 'block';
+    setTimeout(function(){ closeModal('soumission'); document.getElementById('s-sent').style.display='none'; }, 2500);
+    form.reset();
+  }).catch(function(){
+    document.getElementById('s-error').style.display = 'block';
+  }).finally(function(){
+    btn.disabled = false; btn.textContent = 'Envoyer la demande →';
+  });
+});
+
+/* ── CARRIÈRE FORM (envoi direct via FormSubmit) ── */
+document.getElementById('form-carriere').addEventListener('submit', function(e){
+  e.preventDefault();
+  var form = this;
+  var btn = form.querySelector('.form-submit');
+  var data = new FormData(form);
+  document.getElementById('c-error').style.display = 'none';
+  btn.disabled = true; btn.textContent = 'Envoi en cours…';
+  fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+    method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+  }).then(function(res){ if(!res.ok) throw new Error('bad response'); return res.json(); })
+  .then(function(){
+    document.getElementById('c-sent').style.display = 'block';
+    setTimeout(function(){ closeModal('carriere'); document.getElementById('c-sent').style.display='none'; }, 2500);
+    form.reset();
+    document.getElementById('cv-name').textContent = '';
+  }).catch(function(){
+    document.getElementById('c-error').style.display = 'block';
+  }).finally(function(){
+    btn.disabled = false; btn.textContent = 'Envoyer ma candidature →';
+  });
+});
+
+/* ══════════════════════════════════════════════
+   CHATBOT — Q&A CONVERSATIONNEL
+══════════════════════════════════════════════ */
+var _chatOpen = false;
+var _chatStarted = false;
+
+function toggleChat(){
+  _chatOpen = !_chatOpen;
+  document.getElementById('chatbot-bubble').classList.toggle('open', _chatOpen);
+  if(_chatOpen && !_chatStarted){
+    _chatStarted = true;
+    setTimeout(function(){ addBotMsg('Bonjour ! 👋 Je suis l\'assistant GK Groupe inc. Quelle question puis-je répondre pour vous ?'); }, 400);
+    setTimeout(function(){ showMainMenu(); }, 900);
+  }
+}
+
+function addBotMsg(text){
+  var body = document.getElementById('chat-body');
+  var msg = document.createElement('div');
+  msg.className = 'chat-msg bot';
+  msg.innerHTML = text;
+  body.appendChild(msg);
+  body.scrollTop = 9999;
+}
+
+function addUserMsg(text){
+  var body = document.getElementById('chat-body');
+  var msg = document.createElement('div');
+  msg.className = 'chat-msg user';
+  msg.textContent = text;
+  body.appendChild(msg);
+  body.scrollTop = 9999;
+}
+
+function showMainMenu(){
+  document.getElementById('chat-choices').innerHTML =
+    '<button class="chat-choice" onclick="chatQ(\'services\')">🔍 Vos services ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'forfaits\')">💳 Vos forfaits ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'tarifs\')">💰 Tarifs &amp; délais ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'zone\')">📍 Zone desservie ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'soumission\')">📋 Soumission ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'horaires\')">🕐 Horaires ?</button>' +
+    '<button class="chat-choice" onclick="chatQ(\'equipe\')">👤 Parler à l\'équipe</button>';
+}
+
+var _qa = {
+  services:{
+    user: '🔍 Vos services ?',
+    bot: 'On offre :<br>📦 <b>Livraison</b> locale &amp; express<br>🚚 <b>Déménagement</b> résidentiel &amp; commercial<br>🔧 <b>Service mécanique</b> auto<br>✨ <b>Détaillage</b> intérieur &amp; extérieur<br>🌱 Jardinage &amp; ❄️ Déneigement <i>(bientôt !)</i>',
+    wa: false
+  },
+  forfaits:{
+    user: '💳 Vos forfaits ?',
+    bot: 'On a 3 forfaits détaillage &amp; entretien :<br>🔹 <b>Base</b> — 120$ + tx<br>🔹 <b>Standard</b> — 220$ + tx <i>(le plus populaire)</i><br>🔹 <b>Premium</b> — 320$ + tx<br>Détails complets dans la section <b>Forfaits</b> du site.',
+    wa: true
+  },
+  tarifs:{
+    user: '💰 Tarifs &amp; délais ?',
+    bot: 'Nos tarifs sont établis selon chaque mandat. On offre des <b>soumissions gratuites</b> et sans engagement. Pour un estimé précis, notre équipe vous répondra rapidement.',
+    wa: true
+  },
+  zone:{
+    user: '📍 Zone desservie ?',
+    bot: 'On dessert principalement le <b>Saguenay</b>,et les environs. Pour des destinations plus éloignées, contactez-nous directement.',
+    wa: true
+  },
+  soumission:{
+    user: '📋 Soumission ?',
+    bot: 'Pour une soumission, remplissez notre formulaire ou appelez-nous. Notre équipe vous contacte dans les <b>24h</b> avec un prix clair et sans surprise.',
+    wa: true
+  },
+  horaires:{
+    user: '🕐 Horaires ?',
+    bot: 'Nous sommes disponibles <b>7 jours sur 7</b>. Pour les urgences hors horaires, contactez l\'équipe directement sur WhatsApp.',
+    wa: true
+  },
+  equipe:{
+    user: "👤 Parler à l'équipe",
+    bot: null,
+    wa: true
+  }
+};
+
+function chatQ(key){
+  var qa = _qa[key];
+  if(!qa) return;
+  addUserMsg(qa.user);
+
+  setTimeout(function(){
+    if(qa.bot) addBotMsg(qa.bot);
+
+    setTimeout(function(){
+      if(qa.wa){
+        addBotMsg('Pour toute autre question, je vous transfère à notre équipe directement sur <b>WhatsApp</b> 👇');
+        document.getElementById('chat-choices').innerHTML =
+          '<button class="chat-wa-choice" onclick="window.open(\'https://wa.me/15814470086\',\'_blank\')">💬 Écrire à l\'équipe sur WhatsApp</button>' +
+          '<button class="chat-choice" onclick="showMainMenu()">← Autres questions</button>';
+      } else {
+        document.getElementById('chat-choices').innerHTML =
+          '<button class="chat-choice" onclick="showMainMenu()">← Autres questions</button>';
+      }
+    }, qa.bot ? 600 : 0);
+  }, 350);
+}
+</script>
+
+</body>
+</html>
