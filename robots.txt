@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gkgroupeinc.com/sitemap.xml
