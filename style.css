@@ -427,7 +427,7 @@
 
   /* ---------- forfaits (packs) ---------- */
   .packs{background:var(--paper);}
-  .pack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start;}
+  .pack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch;}
   .pack-card{
     background:#fff;border:1px solid var(--line);border-radius:var(--radius);
     padding:40px 30px 32px;display:flex;flex-direction:column;position:relative;
@@ -451,7 +451,7 @@
   .pack-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-soft);line-height:1.4;}
   .pack-list li svg{width:17px;height:17px;flex-shrink:0;color:var(--blue);margin-top:2px;}
   .pack-list li.plus-label{font-weight:700;color:var(--ink);font-size:13px;text-transform:uppercase;letter-spacing:.03em;margin-top:2px;}
-  .pack-btn{background:var(--ink);color:#fff;border:none;padding:15px;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;transition:background .2s;}
+  .pack-btn{background:var(--ink);color:#fff;border:none;padding:15px;border-radius:10px;font-weight:700;font-size:14px;text-align:center;cursor:pointer;transition:background .2s;}
   .pack-btn:hover{background:var(--blue);}
   .pack-card.featured .pack-btn{background:var(--blue);}
   .pack-card.featured .pack-btn:hover{background:var(--blue-deep);}

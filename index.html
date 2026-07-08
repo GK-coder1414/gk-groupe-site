@@ -365,7 +365,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Vidange d'huile moteur</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : nettoyage des jantes</li>
       </ul>
-      <button class="pack-btn" onclick="openPackModal('Pack Base','150$')">Réserver ce forfait →</button>
+      <a class="pack-btn" href="https://app.squareup.com/appointments/book/vewm7vlocnf8td/LKE050Q96VTRC/start" target="_blank" rel="noopener">Réserver ce forfait →</a>
     </div>
 
     <div class="pack-card featured">
@@ -381,7 +381,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Changement de frein <em>ou</em> de pneu (sur jante)</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : parfum habitacle</li>
       </ul>
-      <button class="pack-btn" onclick="openPackModal('Pack Standard','250$')">Réserver ce forfait →</button>
+      <a class="pack-btn" href="https://app.squareup.com/appointments/book/vewm7vlocnf8td/LKE050Q96VTRC/start" target="_blank" rel="noopener">Réserver ce forfait →</a>
     </div>
 
     <div class="pack-card">
@@ -396,7 +396,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Frein <b>et</b> pneu inclus (avec ou sans jante)</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bonus : nettoyage du compartiment moteur</li>
       </ul>
-      <button class="pack-btn" onclick="openPackModal('Pack Premium','350$')">Réserver ce forfait →</button>
+      <a class="pack-btn" href="https://app.squareup.com/appointments/book/vewm7vlocnf8td/LKE050Q96VTRC/start" target="_blank" rel="noopener">Réserver ce forfait →</a>
     </div>
 
   </div>
@@ -698,13 +698,6 @@ function closeModal(id){
   var overlay = document.getElementById('modal-' + id);
   if(overlay) overlay.classList.remove('open');
   document.body.style.overflow = '';
-}
-function openPackModal(nom, prix){
-  openModal('soumission');
-  var select = document.querySelector('#form-soumission select[name="service"]');
-  if(select) select.value = '✨ Détaillage auto';
-  var msg = document.querySelector('#form-soumission textarea[name="message"]');
-  if(msg) msg.value = 'Forfait demandé : ' + nom + ' (' + prix + ' + tx)';
 }
 document.addEventListener('click', function(e){
   if(e.target.classList.contains('modal-overlay')) closeModal(e.target.id.replace('modal-',''));
