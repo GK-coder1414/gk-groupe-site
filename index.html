@@ -604,7 +604,7 @@
 <div class="modal-overlay" id="modal-carriere">
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal('carriere')">✕</button>
-    <h3>💼 Postuler chez GK Groupe</h3>
+    <h3 id="carriere-title">Postuler chez GK Groupe inc</h3>
     <p class="msub" id="carriere-sub">Remplissez le formulaire et joignez votre CV — on vous revient rapidement.</p>
     <form id="form-carriere" action="https://formsubmit.co/gestion@gkgroupeinc.com" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="_subject" value="Nouvelle candidature — GK Groupe inc">
@@ -691,9 +691,16 @@ function openModal(id, poste){
     var sub = document.getElementById('carriere-sub');
     var posteFld = document.getElementById('c-poste-affiche');
     var hidden = document.getElementById('c-poste-hidden');
+    var title = document.getElementById('carriere-title');
     if(sub) sub.textContent = 'Poste : ' + poste;
     if(posteFld) posteFld.value = poste;
     if(hidden) hidden.value = poste;
+    if(title){
+      var marque = 'GK Groupe inc';
+      if(poste === 'Livreur / Coursier' || poste === 'Préposé au déménagement') marque = 'GK Express';
+      else if(poste === 'Mécanicien auto' || poste === 'Technicien en détaillage') marque = 'GK Service Auto';
+      title.textContent = 'Postuler chez ' + marque;
+    }
   }
 }
 function closeModal(id){
