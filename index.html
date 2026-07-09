@@ -6,7 +6,9 @@
 <title>GK GROUPE inc — Livraison · Déménagement · Auto · Jardinage</title>
 <meta name="description" content="GK Groupe inc — Livraison, déménagement, service auto et détaillage au Québec. Soumission gratuite, réponse sous 24h.">
 <link rel="canonical" href="https://gkgroupeinc.com/">
-<link rel="icon" href="Infos.jpg">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 
 
@@ -43,12 +45,24 @@
     "addressCountry": "CA"
   },
   "areaServed": "Saguenay et environs",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "20:00",
+      "validFrom": "2026-05-01",
+      "validThrough": "2026-10-31"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "17:00",
+      "validFrom": "2026-11-01",
+      "validThrough": "2027-04-30"
+    }
+  ],
   "sameAs": []
 }
 </script>
@@ -80,7 +94,7 @@
     {
       "@type": "Question",
       "name": "Quels sont vos horaires ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "GK Groupe est disponible 7 jours sur 7." }
+      "acceptedAnswer": { "@type": "Answer", "text": "GK Groupe est disponible 7 jours sur 7, de 7h à 20h l'été (mai à octobre) et de 8h à 17h l'hiver (novembre à avril)." }
     }
   ]
 }
@@ -441,7 +455,7 @@
     </details>
     <details class="faq-item">
       <summary>Quels sont vos horaires ?<span class="faq-plus">+</span></summary>
-      <p>On est disponibles 7 jours sur 7. Pour une urgence en dehors des heures normales, écrivez-nous directement sur WhatsApp.</p>
+      <p>On est disponibles 7 jours sur 7, de 7h à 20h l'été (mai à octobre) et de 8h à 17h l'hiver (novembre à avril). Pour une urgence en dehors des heures normales, écrivez-nous directement sur WhatsApp.</p>
     </details>
     <details class="faq-item">
       <summary>Comment réserver ou obtenir une soumission ?<span class="faq-plus">+</span></summary>
@@ -837,7 +851,7 @@ var _qa = {
   },
   horaires:{
     user: '🕐 Horaires ?',
-    bot: 'Nous sommes disponibles <b>7 jours sur 7</b>. Pour les urgences hors horaires, contactez l\'équipe directement sur WhatsApp.',
+    bot: 'Nous sommes disponibles <b>7 jours sur 7</b>, de 7h à 20h l\'été et de 8h à 17h l\'hiver. Pour les urgences hors horaires, contactez l\'équipe directement sur WhatsApp.',
     wa: true
   },
   equipe:{
